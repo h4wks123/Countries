@@ -1,0 +1,58 @@
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./index.css" />
+    <script src="./index.js" defer></script>
+  </head>
+  <body>
+    <header class="navigation-bar">
+      <nav class="navigation-bar-container">
+        <h3 class="navigation-bar-left">Where in the world?</h3>
+        <div class="navigation-bar-right">
+          <button class="navigation-bar-right__button" onclick="changeTheme()">
+            <img
+              id="navigation-bar-right__button-mode"
+              class="navigation-bar-right__button-mode"
+              src="./assets/light-mode.svg"
+            />
+          </button>
+          <h6
+            id="navigation-bar-right__text"
+            class="navigation-bar-right__text"
+          >
+            Light Mode
+          </h6>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="container">
+        <section class="filter-options">
+          <div class="filter-options-search">
+            <img
+              id="filter-options-search__icon"
+              class="filter-options-search__icon"
+              src="./assets/search-light-mode.svg"
+            />
+            <input id="filter-options-search__text" class="filter-options-search__text" placeholder="Search for a country..."></input>
+          </div>
+          <select id="filter-options-region" class="filter-options-region">
+            <option style="display: none;">Filter by Region</option>
+            <option value="">None</option>
+            <option value="africa">Africa</option>
+            <option value="america">America</option>
+            <option value="asia">Asia</option>
+            <option value="europe">Europe</option>
+            <option value="oceania">Oceania</option>
+          </select>
+        </section>
+        <section id="country-cards" class="country-cards"></section>
+      </div>
+    </main>
+  </body>
+</html>

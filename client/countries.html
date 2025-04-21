@@ -1,0 +1,113 @@
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./index.css" />
+    <script src="./countries.js" defer></script>
+  </head>
+  <body>
+    <header class="navigation-bar">
+      <nav class="navigation-bar-container">
+        <h3 class="navigation-bar-left">Where in the world?</h3>
+        <div class="navigation-bar-right">
+          <button class="navigation-bar-right__button" onclick="changeTheme()">
+            <img
+              id="navigation-bar-right__button-mode"
+              class="navigation-bar-right__button-mode"
+              src="./assets/light-mode.svg"
+            />
+          </button>
+          <h6
+            id="navigation-bar-right__text"
+            class="navigation-bar-right__text"
+          >
+            Light Mode
+          </h6>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="container">
+        <button
+          id="previous-page__button"
+          class="previous-page__button"
+          onclick="navigateHomePage()"
+        >
+          <img
+            src="./assets/back-light-mode.svg"
+            id="back__icon"
+            class="back__icon"
+          />
+          Back
+        </button>
+        <section class="country-data">
+          <img id="country__paper-flag" class="country__paper-flag" />
+          <article class="country-details">
+            <h3
+              id="country-details__country-name"
+              class="country-details__country-name"
+            />
+            <ul>
+              <h6
+                id="country-details__native-name"
+                class="country-details__native-name"
+              >
+                <p style="font-weight: bold">Native Name:</p>
+              </h6>
+              <h6
+                id="country-details__population"
+                class="country-details__population"
+              >
+                <p style="font-weight: bold">Population:</p>
+              </h6>
+              <h6 id="country-details__region" class="country-details__region">
+                <p style="font-weight: bold">Region:</p>
+              </h6>
+              <h6
+                id="country-details__sub-region"
+                class="country-details__sub-region"
+              >
+                <p style="font-weight: bold">Sub Region:</p>
+              </h6>
+              <h6
+                id="country-details__capital"
+                class="country-details__capital"
+              >
+                <p style="font-weight: bold">Capital:</p>
+              </h6>
+            </ul>
+            <ul>
+              <h6
+                id="country-details__top-level-domain"
+                class="country-details__top-level-domain"
+              >
+                <p style="font-weight: bold">Top Level Domain:</p>
+              </h6>
+              <h6
+                id="country-details__currencies"
+                class="country-details__currencies"
+              >
+                <p style="font-weight: bold">Currencies:</p>
+              </h6>
+              <h6
+                id="country-details__languages"
+                class="country-details__languages"
+              >
+                <p style="font-weight: bold">Languages:</p>
+              </h6>
+            </ul>
+            <ul class="border-countries">
+              <h6 id="border-countries__text" class="border-countries__text">
+                <p style="font-weight: bold">Border Countries:</p>
+              </h6>
+            </ul>
+          </article>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
